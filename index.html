@@ -3,6 +3,7 @@
     <link rel="icon" type="image/png" href="favicon.png"/>
     <link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
 
     <style>
 
@@ -24,39 +25,90 @@
         }
 
         .logo {
-        top: 50%;
-        position: absolute;
-        margin-top: -250px;
-        left: 50%;
-        margin-left: -500px;
-        width: 1000px;
+            top: 50%;
+            position: absolute;
+            margin-top: -300px;
+            left: 50%;
+            margin-left: -500px;
+            width: 1000px;
         }
 
         .slogan {
-        margin-top: 40px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        font-family: 'Arbutus Slab', serif;
-        font-size: 35pt;
+            margin-top: 40px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            font-family: 'Arbutus Slab', serif;
+            font-size: 35pt;
+        }
+
+        .slogan .thefor {
+            font-family: "Lily Script One";
+            font-style: italic;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+
+        .platforms {
+            left: 50%;
+            margin-left: -300px;
+            width: 600px;
+            position: relative;
+        }
+
+        .platforms li {
+            float: left;
+            margin: 0px 49px 0px 49px;
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+
+
+        .platforms li a {
+            margin-top: 10px;
+            display: block;
+            color: white;
+ 
+            letter-spacing: 0.25em;
+            text-align: center;
+            text-decoration: none;
+        }
+
+
+        .platforms li a:hover {
+            color: gray;
+        }
+
+        .platforms li img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .platforms li img.apple {
+            width: 100px;
+            height: 115px;
+            margin-top: -15px;
         }
 
         .menu {
-        color: white;
+            color: white;
 
-        text-align: center;
-        font-family: sans-serif;
+            text-align: center;
+            font-family: sans-serif;
         font-size: 14pt;
         padding-top: 5px;
         padding-bottom: 5px;
 
         bottom: 50px;
         left: 50%;
-        margin-left: -310px;
-        width: 620px;
+        margin-left: -250px;
+        width: 580px;
         position: absolute;
         text-align: center;
         border-radius: 20px;
         }
+
+
 
         .menu a {
 
@@ -87,16 +139,24 @@
 <body>
 <div class="logo">
     <h1>[ app dev: studio ]</h1>
+    <p class="slogan">Where ideas become perfect apps <span class="thefor">for</span></p>
+    <ul class="platforms">
+        <li><img src="android.png" /><a href="#">ANDROID</a></li>
+        <li><img class="apple" src="apple.png" /><a href="#">IPHONE</a></li>
+        <li><img src="simple-white-earth-md.png" /><a href="#">WEB</a></li>
 
-    <p class="slogan">Where ideas become perfect apps</p>
+    </ul>
+
 </div>
 <div class="menu">
-
     <a href="#">STUDIO</a>&bull;
     <a href="#">PEOPLE</a>&bull;
     <a href="#">WORK</a>&bull;
     <a href="#">BLOG</a>&bull;
     <a href="#">CONTACT</a>
+
+    
+
 </div>
 </body>
 </html>
