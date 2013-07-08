@@ -36,7 +36,7 @@
         .slogan {
             margin-top: 40px;
             text-align: center;
-            letter-spacing: 0.3em;
+            letter-spacing: 0.35em;
             font-family: 'Arbutus Slab', serif;
             font-size: 25pt;
         }
@@ -58,6 +58,7 @@
         }
 
         .platforms li {
+            font-size: 14pt;
             float: left;
             margin: 0px 49px 0px 49px;
             text-align: center;
@@ -67,7 +68,7 @@
 
 
         .platforms li a {
-            margin-top: 10px;
+          
             display: block;
             color: white;
  
@@ -114,10 +115,10 @@
 
         .menu a {
 
-        vertical-align: bottom;
+            vertical-align: bottom;
 
-        color: white;
-        text-decoration: none;
+            color: white;
+            text-decoration: none;
 
         padding-top: 20px;
         letter-spacing: 0.25em;
@@ -133,7 +134,31 @@
         }
 
         .menu a:hover {
-        color: gray;
+            color: gray;
+        }
+
+        .contact-btn {
+            display: block;
+            width: 200px;
+            bottom: 50px;
+
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+
+            bottom: 50px;
+            left: 50%;
+            margin-left: -100px;
+            position: absolute;
+            
+            background-color: #FF0090;
+            color: #FFFFFF;
+            box-shadow: 0 0 10px rgba(0,0,0,0.9);
+            font-family: sans-serif;
+            font-size: 16pt;
+            border-radius: 3px;
+            letter-spacing: 0.3em;
+
         }
 
     </style>
@@ -141,15 +166,17 @@
 <body>
 <div class="logo">
     <h1>[ app dev: studio ]</h1>
-    <p class="slogan">Where ideas become perfect apps <span class="thefor">for</span></p>
+    <p class="slogan">Where ideas become great apps <span class="thefor">for</span></p>
     <ul class="platforms">
-        <li><img src="android.png" /><a href="#">ANDROID</a></li>
-        <li><img class="apple" src="apple.png" /><a href="#">IPHONE</a></li>
-        <li><img src="simple-white-earth-md.png" /><a href="#">WEB</a></li>
+        <li><a href="#"><img src="android.png" /><p>ANDROID</p></a></li>
+        <li><a href="#"><img class="apple" src="apple.png" /><p>IPHONE</p></a></li>
+        <li><a href="#"><img src="simple-white-earth-md.png" /><p>WEB</p></a></li>
 
     </ul>
 
 </div>
+
+<!--
 <div class="menu">
     <a href="#">STUDIO</a>&bull;
     <a href="#">PEOPLE</a>&bull;
@@ -157,8 +184,11 @@
     <a href="#">BLOG</a>&bull;
     <a href="#">CONTACT</a>
 
-    
-
 </div>
+-->
+
+<a class="contact-btn" href="#">GET AN APP</a>
+
+
 </body>
 </html>
